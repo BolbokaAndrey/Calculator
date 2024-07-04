@@ -17,6 +17,7 @@ body {
 }
 
 .wrapper {
+    background-color: #98C3E5;
     margin-top: 70px;
     border-style: solid;
     border-color: black;
@@ -26,6 +27,7 @@ body {
 }
 
 .main-window {
+    background-color: #fff;
     margin: 10px;
     margin-top: 30px;
     border-style: solid;
@@ -75,6 +77,10 @@ body {
     font-size: 36px;
 }
 
+.active {
+    background: linear-gradient(to right, white, #d3d3d3);
+}
+
 .control-panel {
     margin: 10px;
     margin-top: 40px;
@@ -84,6 +90,7 @@ body {
 }
 
 .btn {
+    background-color: #2B74B7;
     border-style: solid;
     border-color: black;
     border-width: 2px;
@@ -92,7 +99,13 @@ body {
     height: 2em;
     line-height: 2em;
     width: 2.4em;
+    cursor: default;
+    user-select: none;
 }   
+
+.btn:hover {
+    background-color: #24509A;
+}
 
 .control-panel__special-panel {
     display: grid;
