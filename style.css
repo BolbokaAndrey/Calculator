@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 26px;
+
+}
+
+.wrapper {
+    margin-top: 70px;
+    border-style: solid;
+    border-color: black;
+    border-width: 4px;
+    width: 500px;
+    height: 550px;
+}
+
+.main-window {
+    margin: 10px;
+    margin-top: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 10%;
+    height: 200px;
+    display: grid;
+    grid-template-areas: "operator first"
+                        "operator second"
+                        "result result";
+    grid-template-rows: 30% 30% auto;
+    grid-template-columns: 10% auto;
+    overflow: hidden;
+    
+}
+
+.main-window__first-operand {
+    grid-area: first;
+    text-align: end;
+    align-content: center;
+    padding-right: 5px;
+}
+
+.main-window__second-operand {
+    grid-area: second;
+    text-align: end;
+    align-content: center;
+    padding-right: 5px;
+}
+
+.main-window__operator {
+    grid-area: operator;
+    text-align: center;
+    align-content: center;
+
+}
+
+.main-window__result {
+    grid-area: result;
+    text-align: end;
+    align-content: center;
+    border-top-style: solid;
+    border-top-color: grey;
+    border-top-width: 1px;
+    padding-right: 5px;
+    font-size: 36px;
+}
+
+.control-panel {
+    margin: 10px;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 25px;
+}
+
+.btn {
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 10%;
+    text-align: center;
+    height: 2em;
+    line-height: 2em;
+    width: 2.4em;
+}   
+
+.control-panel__special-panel {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 4px;
+}
+
+.control-panel__numbers-panel {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 4px;
+}
+
+.control-panel__operators-panel {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 4px;
+}
+
+.equal {
+    grid-row: 4 / 5;
+    grid-column: 1 / -1;
+    width: auto;
+}
+
